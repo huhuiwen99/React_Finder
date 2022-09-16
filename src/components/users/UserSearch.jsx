@@ -13,7 +13,7 @@ function UserSearch() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-
+    
     if (text === '') {
       setAlert('Please enter something', 'error')
     } else {
@@ -48,6 +48,7 @@ function UserSearch() {
           </div>
         </form>
       </div>
+
       {users.length > 0 && (
         <div>
           <button
@@ -58,6 +59,7 @@ function UserSearch() {
           </button>
         </div>
       )}
+
     </div>
   )
 }
